@@ -12,3 +12,14 @@ Backend -
  - Node
  - Express
  - MongoDB
+
+## Backend Packages Used:
+  - express → Server framework
+  - mongoose → MongoDB ODM
+  - dotenv → Environment variables
+  - cors → Handle cross-origin requests
+  - morgan → HTTP request logging
+  - helmet → Security headers
+  - compression → Gzip compression
+  - nodemon → Auto-restart server in dev
+  - eslint → Code linting 
