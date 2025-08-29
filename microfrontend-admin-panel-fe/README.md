@@ -14,3 +14,7 @@ host-app (Angular 16)
 - ng add @angular-architects/module-federation@^16.0.0 --project host-app --type host --port 4200
 - This sets up Webpack 5 + Module Federation.
 - Configure webpack.config.js in host-app:
+
+# Step 2: Angular MFE (Login + Dashboard)
+- ng new mfe-login --routing --style=scss 
+- ng add @angular-architects/module-federation@^16.0.0 --project mfe-login --type remote --port 4201
