@@ -5,6 +5,8 @@ import morgan from 'morgan';
 import compression from 'compression';
 import userRoutes from './routes/userRoutes.js';
 import errorHandler from './middlewares/errorHandler.js';
+import authRoutes from './routes/authRoutes.js';
+import productRoutes from './routes/productRoutes.js';
 
 const app = express();
 
@@ -17,6 +19,7 @@ app.use(compression());
 
 // Routes
 app.use("api/auth", authRoutes);
+app.use("api/products", productRoutes);
 app.use("api/users", userRoutes);
 
 // Error handling middleware
