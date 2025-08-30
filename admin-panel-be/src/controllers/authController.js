@@ -1,9 +1,9 @@
-import User from "../models/userModel";
+import User from "../models/userModel.js";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
 // SECRET FOR JWT TOKEN
-const secret = process.env.JWT_SECRET;
+const secret = process.env.JWT_SECRET || "ecom_xyz#@_admin_%$#@_panel";
 
 export const signup = async (req, res, next) => {
   try {
@@ -16,7 +16,7 @@ export const signup = async (req, res, next) => {
     }
 
     // check if user already exist
-    const isUserExist = await IUser.findOne({ email });
+    const isUserExist = await User.findOne({ email });
     if (isUserExist) {
       return res.status(400).json({ message: 'User already exist' });
     }
