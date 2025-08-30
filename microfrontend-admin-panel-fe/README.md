@@ -18,3 +18,10 @@ host-app (Angular 16)
 # Step 2: Angular MFE (Login + Dashboard)
 - ng new mfe-login --routing --style=scss 
 - ng add @angular-architects/module-federation@^16.0.0 --project mfe-login --type remote --port 4201
+
+# Step 3: React MFE (Products)
+- npx create-react-app mfe-products
+cd mfe-products
+npm install react-router-dom
+npm install @module-federation/nextjs-mf --save
+

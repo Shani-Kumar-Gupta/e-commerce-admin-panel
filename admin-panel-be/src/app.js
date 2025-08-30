@@ -16,6 +16,7 @@ app.use(morgan('dev'));
 app.use(compression());
 
 // Routes
+app.use("api/auth", authRoutes);
 app.use("api/users", userRoutes);
 
 // Error handling middleware
