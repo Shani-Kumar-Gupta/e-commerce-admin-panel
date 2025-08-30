@@ -19,3 +19,27 @@ my-backend-app/
 ├── .gitignore
 ├── package.json
 └── README.md
+
+
+# Auth API
+ - signup -> POST
+ - login -> GET
+
+# Product API
+ - product listing -> GET
+ - create product -> POST
+ - update product -> DELETE
+ - delete product -> PUT
+
+# Middleware
+ - Auth (Authorize)
+ - Error handler
+
+# Packages Used
+ - Express
+ - Mongoose
+ - CORS
+ - Helmet
+ - Morgan
+ - Bcrypt
+ - jsonwebtoken
