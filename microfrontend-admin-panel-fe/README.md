@@ -21,7 +21,7 @@ host-app (Angular 16)
 
 # Step 3: React MFE (Products)
 - npx create-react-app mfe-products
-cd mfe-products
-npm install react-router-dom
-npm install @module-federation/nextjs-mf --save
+- cd mfe-products
+- npm install react-router-dom
+- npm install @module-federation/webpack-module-federation
 
