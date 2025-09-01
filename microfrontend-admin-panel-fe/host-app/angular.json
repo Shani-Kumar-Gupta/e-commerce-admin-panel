@@ -15,7 +15,7 @@
 			"prefix": "app",
 			"architect": {
 				"build": {
-					"builder": "ngx-build-plus:browser",
+					"builder": "@angular-architects/module-federation:build",
 					"options": {
 						"outputPath": "dist/host-app",
 						"index": "src/index.html",
