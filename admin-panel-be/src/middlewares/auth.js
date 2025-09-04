@@ -1,10 +1,10 @@
 import jwt from "jsonwebtoken";
 
-const secret = process.env.JWT_SECRET;
+const secret = process.env.JWT_SECRET || "ecom_xyz#@_admin_%$#@_panel";
 
-const authMiddleware = (req, res, next) => {
+const authMiddleware = async (req, res, next) => {
   try {
-    const token = req.headers.authorization.split(" ")[1];
+    const token = await req.headers.authorization;
     if(!token) {
       return res.status(401).json({ message: "Unauthorized" });
     }
